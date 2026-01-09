@@ -254,3 +254,24 @@ body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f7f6; colo
         font-size: 0.6rem;
     }
 }
+/* Final Responsive Fixes */
+@media screen and (max-width: 480px) {
+    /* Resizing the Call and WhatsApp buttons as requested */
+    .call-now-btn, .whatsapp-btn {
+        width: 85% !important;   /* Makes buttons narrower for mobile UI */
+        margin: 12px auto !important; 
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        padding: 10px !important;
+        font-size: 15px !important;
+        border-radius: 25px !important; /* Makes them look more like app buttons */
+    }
+
+    /* Fixing the blue contact box spacing */
+    .contact-details {
+        margin: 15px !important;
+        padding: 15px !important;
+        width: auto !important;
+    }
+}
