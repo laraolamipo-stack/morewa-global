@@ -1,0 +1,256 @@
+:root {
+    --morewa-blue: #0d47a1;
+    --morewa-dark: #1a1a1a;
+    --white: #ffffff;
+}
+
+body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f7f6; color: #333; }
+
+/* Layout Grid */
+.inventory-wrapper { max-width: 1200px; margin: 0 auto; padding: 20px; }
+.car-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 25px; 
+    margin-bottom: 50px;
+}
+
+/* Header & Section Titles */
+.main-header { text-align: center; padding: 40px; background: var(--white); border-bottom: 5px solid var(--morewa-blue); }
+.blue-text { color: var(--morewa-blue); }
+.section-title { border-left: 5px solid var(--morewa-blue); padding-left: 15px; margin: 40px 0 20px; }
+
+/* Vehicle Cards */
+.vehicle-card { background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+.image-wrapper { height: 200px; }
+.image-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+.content { padding: 20px; }
+.specs { display: flex; justify-content: space-between; font-size: 0.8rem; color: #777; margin: 10px 0; }
+.price { display: block; font-size: 1.4rem; font-weight: bold; color: var(--morewa-blue); margin-bottom: 15px; }
+
+/* Buttons */
+.actions { display: flex; gap: 10px; }
+.btn { flex: 1; text-align: center; padding: 10px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+.btn-primary { background: var(--morewa-blue); color: white; }
+.btn-secondary { background: #25D366; color: white; }
+
+/* Sections */
+.about-section { background: white; padding: 60px 20px; }
+.about-container { max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 30px; }
+.about-text { flex: 2; min-width: 300px; }
+.about-info-box { flex: 1; background: var(--morewa-blue); color: white; padding: 25px; border-radius: 10px; min-width: 250px; }
+.testimonials-section { background: #e9ecef; padding: 60px 20px; text-align: center; }
+.testimonial-grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+.testimonial-card { background: white; padding: 20px; border-radius: 10px; width: 300px; }
+.cta-section { background: var(--morewa-blue); color: white; padding: 80px 20px; text-align: center; }
+.cta-btn { padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; margin: 10px; display: inline-block; }
+.phone-btn { background: white; color: var(--morewa-blue); }
+.whatsapp-btn { background: #25D366; color: white; }
+.company-footer { text-align: center; padding: 30px; background: var(--morewa-dark); color: white; font-size: 0.8rem; }
+/* VIDEO SECTION STYLING */
+.video-showroom {
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.section-subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.video-card {
+    background: #f9f9f9;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-info {
+    padding: 15px 20px;
+}
+
+.video-info h4 {
+    margin: 0 0 5px 0;
+    color: var(--morewa-blue);
+}
+
+.video-info p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0;
+}
+
+/* Responsive adjustment for small phones */
+@media (max-width: 400px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* CALL TO ACTION STYLING */
+.cta-section {
+    background: linear-gradient(rgba(13, 71, 161, 0.9), rgba(13, 71, 161, 0.9)), 
+                url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=1500'); /* Car background */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.highlight {
+    color: #ffc107; /* Gold highlight */
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    padding: 18px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.phone-btn {
+    background-color: #ffffff;
+    color: var(--morewa-blue);
+}
+
+.whatsapp-btn {
+    background-color: #25D366;
+    color: white;
+}
+
+.cta-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.office-tag {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 600px) {
+    .cta-content h2 { font-size: 1.8rem; }
+    .cta-buttons { flex-direction: column; }
+    .cta-btn { width: 100%; justify-content: center; }
+}
+/* BRANDED LOGO STYLING */
+.main-header {
+    background: #ffffff;
+    padding: 20px 0;
+    border-bottom: 3px solid #1a4b8c;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column; /* Icon on top, text below like the design */
+    align-items: center;
+    text-align: center;
+}
+
+.logo-icon img {
+    height: 60px; /* Adjust based on your image size */
+    margin-bottom: 10px;
+}
+
+/* Fallback MG Style if you don't have the image yet */
+.mg-placeholder {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #1a4b8c;
+    font-style: italic;
+    border: 3px solid #1a4b8c;
+    padding: 5px 15px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.logo-text h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+/* Colors from the official branding */
+.navy-blue {
+    color: #1a4b8c; /* The specific professional blue */
+}
+
+.black-text {
+    color: #000000;
+}
+
+.tagline {
+    margin: 5px 0 0;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #555;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Mobile responsive logo */
+@media (max-width: 600px) {
+    .logo-text h1 {
+        font-size: 1.3rem;
+    }
+    .tagline {
+        font-size: 0.6rem;
+    }
+}
