@@ -1,0 +1,20 @@
+{
+  "name": "Morewa Global Resources Ltd",
+  "short_name": "MorewaGlobal",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#0056b3",
+  "icons": [
+    {
+      "src": "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?q=80&w=192",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?q=80&w=512",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
