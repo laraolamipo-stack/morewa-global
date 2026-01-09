@@ -256,16 +256,15 @@ body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f7f6; colo
 }
 /* Final Responsive Fixes */
 @media screen and (max-width: 480px) {
-    /* Resizing the Call and WhatsApp buttons as requested */
     .call-now-btn, .whatsapp-btn {
-        width: 85% !important;   /* Makes buttons narrower for mobile UI */
+        width: 85% !important;   
         margin: 12px auto !important; 
         display: flex !important;
         justify-content: center;
         align-items: center;
         padding: 10px !important;
         font-size: 15px !important;
-        border-radius: 25px !important; /* Makes them look more like app buttons */
+        border-radius: 25px !important; 
     }
 
     /* Fixing the blue contact box spacing */
@@ -275,18 +274,15 @@ body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f7f6; colo
         width: auto !important;
     }
 }
-/* This specifically changes the phone number link color */
 .contact-details a {
-    color: #ffffff !important; /* Changes the blue number to white */
-    text-decoration: none;    /* Removes the underline if you want it clean */
-    font-weight: bold;        /* Makes it stand out */
-}
+    color: #ffffff !important; 
+    text-decoration: none;    
+    font-weight: bold;        
 
-/* This ensures it stays white even after being clicked */
+
 .contact-details a:visited {
     color: #ffffff !important;
 }
-/* 1. Base Styles (Fixes Laptop view) */
 .call-now-btn, .whatsapp-btn {
     display: inline-flex !important;
     align-items: center;
@@ -301,19 +297,19 @@ body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f7f6; colo
 
 .call-now-btn {
     background-color: #ffffff !important;
-    color: #003399 !important; /* Dark blue text on white button */
+    color: #003399 !important; 
 }
 
 .whatsapp-btn {
     background-color: #25D366 !important;
-    color: #ffffff !important; /* White text on green button */
+    color: #ffffff !important; 
 }
 
 /* 2. Mobile Fix (Fixes Phone view) */
 @media screen and (max-width: 480px) {
     .call-now-btn, .whatsapp-btn {
         display: flex !important;
-        width: 85% !important; /* This keeps it inside the blue box */
-        margin: 15px auto !important; /* Centers the buttons */
+        width: 85% !important; 
+        margin: 15px auto !important; 
     }
 }
