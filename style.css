@@ -286,43 +286,36 @@ body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f7f6; colo
 .contact-details a:visited {
     color: #ffffff !important;
 }
-/* Fix for Button Contrast and Size */
-/* 1. Base Button Styles (Laptop & Desktop) */
+/* 1. Base Button Styles (Fixes laptop view) */
 .call-now-btn, .whatsapp-btn {
-    display: inline-flex;
+    display: inline-flex !important;
     align-items: center;
     justify-content: center;
-    padding: 12px 25px;
-    border-radius: 50px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: 0.3s;
-    margin: 10px;
+    padding: 12px 20px !important;
+    border-radius: 50px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    margin: 10px !important;
+    font-size: 16px !important;
 }
 
+/* Fix for the Call Button text color */
 .call-now-btn {
     background-color: #ffffff !important;
-    color: #003399 !important; /* Blue text on white button */
+    color: #003399 !important; /* Dark blue text on white background */
 }
 
+/* Fix for the WhatsApp Button text color */
 .whatsapp-btn {
     background-color: #25D366 !important;
-    color: #ffffff !important; /* White text on green button */
+    color: #ffffff !important; /* White text on green background */
 }
 
-/* 2. Mobile Responsive Fix (Phones) */
+/* 2. Mobile Specific Fix (Fixes phone view) */
 @media screen and (max-width: 480px) {
     .call-now-btn, .whatsapp-btn {
         display: flex !important;
-        width: 80% !important; /* Makes them fit inside the blue box */
-        margin: 15px auto !important; /* Centers them vertically */
-        font-size: 16px !important;
-        padding: 14px !important;
-    }
-
-    /* Fix the "Ready to Drive" section padding */
-    .cta-section {
-        padding: 40px 20px !important;
-        text-align: center;
+        width: 85% !important; /* Prevents button from going off-screen */
+        margin: 15px auto !important; /* Centers button and adds space between them */
     }
 }
