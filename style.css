@@ -286,7 +286,7 @@ body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f7f6; colo
 .contact-details a:visited {
     color: #ffffff !important;
 }
-/* 1. Base Button Styles (Fixes laptop view) */
+/* 1. Base Styles (Fixes Laptop view) */
 .call-now-btn, .whatsapp-btn {
     display: inline-flex !important;
     align-items: center;
@@ -299,23 +299,21 @@ body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f7f6; colo
     font-size: 16px !important;
 }
 
-/* Fix for the Call Button text color */
 .call-now-btn {
     background-color: #ffffff !important;
-    color: #003399 !important; /* Dark blue text on white background */
+    color: #003399 !important; /* Dark blue text on white button */
 }
 
-/* Fix for the WhatsApp Button text color */
 .whatsapp-btn {
     background-color: #25D366 !important;
-    color: #ffffff !important; /* White text on green background */
+    color: #ffffff !important; /* White text on green button */
 }
 
-/* 2. Mobile Specific Fix (Fixes phone view) */
+/* 2. Mobile Fix (Fixes Phone view) */
 @media screen and (max-width: 480px) {
     .call-now-btn, .whatsapp-btn {
         display: flex !important;
-        width: 85% !important; /* Prevents button from going off-screen */
-        margin: 15px auto !important; /* Centers button and adds space between them */
+        width: 85% !important; /* This keeps it inside the blue box */
+        margin: 15px auto !important; /* Centers the buttons */
     }
 }
